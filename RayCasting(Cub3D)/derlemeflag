@@ -1,0 +1,3 @@
+gcc -framework OpenGL -framework AppKit src/ENGINE/MAIN/*.c src/ENGINE/SETELEMENTS/*.c src/ENGINE/UTILITS/*.c src/GAME/*.c src/GAME/SETUP/*.c src/GAME/UPDATE/*.c mlx_mac/libmlx.a -o game
+
+gcc src/ENGINE/MAIN/*.c src/ENGINE/SETELEMENTS/*.c src/ENGINE/UTILITS/*.c src/GAME/SETUP/*.c src/GAME/UPDATE/*.c src/GAME/*.c -Lmlx_linux -lmlx_linux -L/usr/lib -Imlx_linux -lXext -lX11 -lm -lz -o game
